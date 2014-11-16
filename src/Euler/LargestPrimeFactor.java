@@ -5,7 +5,10 @@ package Euler;
  */
 public class LargestPrimeFactor {
     public static void main (String[] args) {
-        int number = 600851475143;
-
+        System.out.println(findGreatestPrimeFactor(600851475143));
+    }
+    public int findGreatestPrimeFactor (Long n) {
+        Long number;
+        number = 600851475143;
     }
 }
