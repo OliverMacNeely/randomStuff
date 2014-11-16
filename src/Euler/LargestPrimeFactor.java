@@ -5,6 +5,7 @@ package Euler;
  */
 public class LargestPrimeFactor {
     public static void main (String[] args) {
-        int number =
+        int number = 600851475143;
+
     }
 }
