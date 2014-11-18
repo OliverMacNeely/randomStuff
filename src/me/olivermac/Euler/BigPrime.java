@@ -13,7 +13,7 @@ public class BigPrime {
         System.out.println(finalNum);
     }
 
-    public static boolean isPrime(int num) {
+    public static boolean isPrime(long  num) {
         for(int i = 2; i < num; i++){
             if(num == 2) return true;
 
