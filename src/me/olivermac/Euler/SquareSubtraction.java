@@ -5,18 +5,20 @@ package me.olivermac.Euler;
  */
 public class SquareSubtraction {
     public static void main(String[] args) {
-        double finalSum = 0;
-        double totalSum = 0;
-        double numSquareSum  = 0;
-        for (double i = 0;i < 101;i++){
+        long finalSum = 0;
+        long totalSum = 0;
+        long numSquareSum  = 0;
+        for (double i = 1;i < 101;i++){
             numSquareSum += Math.pow(i,2);
+            System.out.println("num = " + i);
         }
-        for (int x = 0;x <101;x++){
+        for (int x = 1;x <101;x++){
             totalSum += x;
+            System.out.println("Num = " + x);
         }
-        double totalSquareSum;
-        totalSquareSum = Math.pow(totalSum, 2);
-        finalSum = numSquareSum-totalSquareSum;
+        long totalSquareSum;
+        totalSquareSum =(long) Math.pow(totalSum, 2);
+        finalSum = totalSquareSum - numSquareSum;
         System.out.println(finalSum);
     }
 }
