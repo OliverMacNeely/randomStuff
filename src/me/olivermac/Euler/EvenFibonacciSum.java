@@ -1,4 +1,4 @@
-package Euler;
+package me.olivermac.Euler;
 
 /**
  * Created by Oliver on 11/6/2014.

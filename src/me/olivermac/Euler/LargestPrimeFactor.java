@@ -1,4 +1,4 @@
-package Euler;
+package me.olivermac.Euler;
 
 public class LargestPrimeFactor {
     public static void main (String[] args) {

@@ -1,4 +1,4 @@
-package Euler;
+package me.olivermac.Euler;
 
 import java.util.ArrayList;
 
