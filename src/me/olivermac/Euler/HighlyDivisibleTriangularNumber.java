@@ -11,16 +11,24 @@ public class HighlyDivisibleTriangularNumber {
         int count = 0;
         int i;
         for (i = 1; ; i++){
-            for (x = 1; ;x++){
-                if (Divisible.isDivisible(outputTriangularNumbers(i), x)) {
-                    count++;
-                if(count == 500) System.out.println(outputTriangularNumbers(i));
-                    else count = 0;
-                }
-            }
+            if (count_factors(outputTriangularNumbers(i)) == 500) System.out.println(outputTriangularNumbers(i)); break;
         }
     }
     static int outputTriangularNumbers(int num){
         return ((num*(num +1))/2);
+    }
+    static int count_factors (int num){
+        int i,f=1;
+        if(num==1)
+            return 1;
+        else
+        {
+            for(i=2;i<=(num/2);i++)
+            {
+                if(num%i == 0)
+                    f++;
+            }
+            return (f+1);
+        }
     }
 }
