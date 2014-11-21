@@ -15,6 +15,7 @@ public class HighlyDivisibleTriangularNumber {
                 if (Divisible.isDivisible(outputTriangularNumbers(i), x)) {
                     count++;
                 if(count == 500) System.out.println(outputTriangularNumbers(i));
+                    else count = 0;
                 }
             }
         }
