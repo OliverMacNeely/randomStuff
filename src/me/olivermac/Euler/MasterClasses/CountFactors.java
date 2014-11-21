@@ -4,7 +4,7 @@ package me.olivermac.Euler.MasterClasses;
  * Created by Oliver on 11/20/2014.
  */
 public class CountFactors {
-    static int count_factors (int num){
+    public static int count_factors(int num){
         int i,f=1;
         if(num==1)
             return 1;
