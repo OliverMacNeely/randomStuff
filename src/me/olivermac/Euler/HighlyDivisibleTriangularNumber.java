@@ -11,7 +11,9 @@ public class HighlyDivisibleTriangularNumber {
     public static void main(String[] args) {
         int i;
         for (i = 0; ; i++){
-            if (CountFactors.count_factors(OutputTriangleNumbers.outputTriangularNumbers(i)) == 500)break;
+            System.out.println("" + OutputTriangleNumbers.outputTriangularNumbers(i));
+            System.out.println("" + CountFactors.count_factors(OutputTriangleNumbers.outputTriangularNumbers(i)));
+            if (CountFactors.count_factors(OutputTriangleNumbers.outputTriangularNumbers(i)) > 500)break;
         }
         System.out.println("" + OutputTriangleNumbers.outputTriangularNumbers(i));
     }
