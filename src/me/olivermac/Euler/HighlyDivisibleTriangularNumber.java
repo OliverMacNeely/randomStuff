@@ -8,10 +8,8 @@ import me.olivermac.Euler.MasterClasses.Divisible;
  */
 public class HighlyDivisibleTriangularNumber {
     public static void main(String[] args) {
-        int x;
-        int count = 0;
         int i;
-        for (i = 1; ; i++){
+        for (i = 0; ; i++){
             if (CountFactors.count_factors(outputTriangularNumbers(i)) == 500) System.out.println(outputTriangularNumbers(i)); break;
         }
     }
