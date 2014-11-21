@@ -2,6 +2,7 @@ package me.olivermac.Euler;
 
 import me.olivermac.Euler.MasterClasses.CountFactors;
 import me.olivermac.Euler.MasterClasses.Divisible;
+import me.olivermac.Euler.MasterClasses.OutputTriangleNumbers;
 
 /**
  * Created by Oliver on 11/20/2014.
@@ -10,10 +11,8 @@ public class HighlyDivisibleTriangularNumber {
     public static void main(String[] args) {
         int i;
         for (i = 0; ; i++){
-            if (CountFactors.count_factors(outputTriangularNumbers(i)) == 500) System.out.println(outputTriangularNumbers(i)); break;
+            if (CountFactors.count_factors(OutputTriangleNumbers.outputTriangularNumbers(i)) == 500)break;
         }
-    }
-    static int outputTriangularNumbers(int num){
-        return ((num*(num +1))/2);
+        System.out.println("" + OutputTriangleNumbers.outputTriangularNumbers(i));
     }
 }
