@@ -108,13 +108,12 @@ public class LargeSum {
   int firstIndex = 0;
   int secondIndex = 50;
   long num = 0;
-  for (int i; i == 100; i++) {
-   num += Long.parseLong(largeNumber.substring(firstIndex,secondIndex));
-   firstIndex += 50;
-   secondIndex += 50;
+  for (int i = 0; i < 100; i++) {
+          firstIndex *= (i*50);
+          secondIndex *= ((i - 1) * 50);
+          num += Long.parseLong(largeNumber.substring(firstIndex,secondIndex));
   }
-  String newString = "" + num;
-  System.out.println("" + newString.substring(0,10));
+  System.out.println("" + num);
  }
 
 }
