@@ -1,4 +1,5 @@
 package me.olivermac.Euler;
+import java.math.*;
 
 /**
  * Created by Oliver on 11/21/2014.
@@ -106,14 +107,17 @@ public class LargeSum {
              "     20849603980134001723930671666823555245252804609722\n" +
              "     53503534226472524250874054075591789781264330331690");
   int firstIndex = 0;
-  int secondIndex = 50;
-  long num = 0;
-  for (int i = 0; i < 100; i++) {
-          firstIndex *= (i*50);
-          secondIndex *= ((i - 1) * 50);
-          num += Long.parseLong(largeNumber.substring(firstIndex,secondIndex));
-  }
-  System.out.println("" + num);
+  int secondIndex = 0;
+  BigInteger sum = new BigInteger("0");
+         for (int i = 0; i < 101; i++) {
+          secondIndex += 50;
+          firstIndex = secondIndex - 50;
+          BigInteger num;
+                 num = new BigInteger("" + largeNumber.substring(firstIndex,secondIndex));
+                 sum.add(num);
+
+         }
+  System.out.println("" + sum);
  }
 
 }
